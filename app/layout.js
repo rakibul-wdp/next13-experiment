@@ -4,6 +4,7 @@ import "./globals.css";
 const montserrat = Montserrat({
   weight: ["400", "700"],
   subsets: ["latin"],
+  variable: "--font-montserrat",
 });
 
 export default function RootLayout({ children }) {
