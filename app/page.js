@@ -8,6 +8,11 @@ export default async function Home() {
   return (
     <main>
       <h1 className="">Hi next13</h1>
+      {res.results.map((movie) => (
+        <div>
+          <h1>{movie.title}</h1>
+        </div>
+      ))}
     </main>
   );
 }
