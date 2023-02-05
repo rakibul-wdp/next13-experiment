@@ -9,16 +9,17 @@ export default async function Home() {
 
   return (
     <main>
-      <h1 className="">Hi next13</h1>
-      {res.results.map((movie) => (
-        <Movie
-          key={movie.id}
-          id={movie.id}
-          title={movie.title}
-          posterPath={movie.poster_path}
-          releaseDate={movie.release_date}
-        />
-      ))}
+      <div className="grid gap-12 grid-cols-fluid">
+        {res.results.map((movie) => (
+          <Movie
+            key={movie.id}
+            id={movie.id}
+            title={movie.title}
+            posterPath={movie.poster_path}
+            releaseDate={movie.release_date}
+          />
+        ))}
+      </div>
     </main>
   );
 }
